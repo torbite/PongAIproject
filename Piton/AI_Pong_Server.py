@@ -8,7 +8,7 @@ app = Flask(__name__)
 lastAiCode = 0
 AIsDict = {}
 
-@app.route("/GetAnswer/<code>", methods = ["GET"])
+@app.route("/GetAnswer/<code>", methods = ["POST"])
 def getAIAnswer(code):
     global AIsDict
     data = request.data
